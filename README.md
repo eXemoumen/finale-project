@@ -1,3 +1,3 @@
 # finale-project
-thid id my finale project
+this is my finale project
 
