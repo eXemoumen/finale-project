@@ -13,7 +13,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed;
 }
 .drop-down{
     display: none;
@@ -138,3 +137,48 @@ nav a img{
 .dropdown-items-active{
     display: block;
 }
+section{
+    display: flex;
+    align-items: center;
+}
+section img{
+    width: 67%;
+    margin-top: -40px;
+}
+.login-card{
+    height: 325px;
+    width: 25%;
+    border: 1px black solid;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.login-card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-card p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+.login-card-info div{
+    padding: 20px 0;
+}
+.login-card-info input{
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #6a6a6a;
+}
+.login-card button{
+    background-color: rgba(8, 9, 102, 0.95);
+    width: 90px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 165px;
+}
+
