@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    height:160px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.drop-down{
+    display: none;
+}
+.nav-btn-dropdown{
+    display: none;
+}
+nav a img{
+    height: 150px;
+    width: 380px;
+}
+.nav-items{
+    display: flex;
+    gap: 25px;
+    margin-right: 100px;
+}
+.nav-item{
+    border-bottom: 1px solid black;
+
+}
+.nav-links{
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+    width: fit-content;
+    transition: 0.7s;
+}
+.nav-links:hover{
+    opacity: 0.7;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color:rgba(11, 83, 207,0.5) ;
+}
+@media(max-width:700px){
+    .nav-links{
+        color: black;
+        font-weight: 400;
+        font-size: 14px;
+        width: fit-content;
+    }
+    nav a img{
+        height: 150px;
+        width: 300px;
+    }
+    nav{
+        height: 150px;
+    }
+}
+@media(max-width:517px){
+    .nav-links{
+        color: black;
+        font-weight: 400;
+        font-size: 12px;
+        width: fit-content;
+    }
+    nav a img{
+        height: 100px;
+        width: 250px;
+    }
+    nav{
+        height: 100px;
+    }
+}
+@media(max-width:430px){
+    .nav-links{
+        color: black;
+        font-weight: 400;
+        font-size: 10px;
+        width: fit-content;
+    }
+    nav a img{
+        height: 90px;
+        width: 150px;
+    }
+    nav{
+        height: 90px;
+    }
+}
+@media(max-width:400px){
+    .nav-items{
+        display: none;
+    }
+    nav a img{
+        height: 50px;
+        width: 100px;
+    }
+    nav{
+        height: 50px;
+        margin-right: 100px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 155px;
+    }
+    .nav-btn{
+        margin-top:60px;
+        display: block;
+
+    }
+    .drop-down{
+        display: block;
+        margin-left: 5px;
+    }
+    .dropdown-items{
+        margin-right: 30px;
+        margin-top: 10px;
+        box-shadow: 0 10px 10px   black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        height: 70px;
+        width: 120px;
+        display: none;
+    }
+    .dropdown-item{
+        font-size: 16px;
+        line-height: 25px;
+        cursor: pointer;
+    }
+    .dropdown-item:hover{
+        background-color:rgba(61, 61, 61, 0.304);
+    }
+}
+.dropdown-items-active{
+    display: block;
+}
+section{
+    display: flex;
+    align-items: center;
+}
+section img{
+    width: 67%;
+    margin-top: -40px;
+}
+.login-card{
+    height: 325px;
+    width: 25%;
+    border: 1px black solid;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.login-card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-card p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+.login-card-info div{
+    padding: 20px 0;
+}
+.login-card-info input{
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(183, 183, 183, 0.479);
+}
+.login-card button{
+    background-color: rgba(8, 9, 102, 0.95);
+    width: 90px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 165px;
+}
+
+.a{
+  border: 1px solid red;
+  background-color: red;
+}
+
+#text{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 10px;
+}
+#password-text{
+    display: block;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 10px;
+}
+@media(max-width:950px){
+    .login-card button{
+        background-color: rgba(8, 9, 102, 0.95);
+        width: 70px;
+        height: 22px;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 122px;
+    }  
+}
+@media(max-width:825px){
+    .login-card{
+        height: 290px;
+        width: 25%;
+        border: 1px black solid;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    .login-card p{
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 45px;
+    }
+    .login-card-info input{
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(183, 183, 183, 0.479);
+    }
+    .login-card button{
+        background-color: rgba(8, 9, 102, 0.95);
+        width: 70px;
+        height: 22px;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 125px;
+    }  
+    input{
+        font-size: 12px;
+    }
+    .login-card-info div{
+        padding: 16px 0;
+    }
+    #text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    #password-text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+@media(max-width : 763px){
+    .login-card{
+        height: 235px;
+        width: 25%;
+        border: 1px black solid;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    .login-card button{
+        background-color: rgba(8, 9, 102, 0.95);
+        width: 65px;
+        height: 22px;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 110px;
+    }
+    input{
+        font-size: 11px;
+    }
+    .login-card-info div{
+        padding: 14px 0;
+    }
+    .login-card p{
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 40px;
+    }
+    #text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    #password-text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+@media(max-width : 700px){
+    .login-card{
+        height: 200px;
+        width: 25%;
+        border: 1px black solid;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    section img{
+        background-image: url(../res/img/backgrond.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .login-card button{
+        background-color: rgba(8, 9, 102, 0.95);
+        width: 60px;
+        height: 22px;
+        color: white;
+        font-size: 11px;
+        font-weight: 400;
+        margin-left: 90px;
+    }
+    input{
+        font-size: 11px;
+    }
+    .login-card-info div{
+        padding: 12px 0;
+    }
+    .login-card p{
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 30px;
+    }
+
+}
+@media(max-width : 700px){
+
+    .login-card{
+        height: 190px;
+        width: 25%;
+        border: 1px black solid;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    .login-card-info input{
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(183, 183, 183, 0.479);
+    }
+    .login-card p{
+        font-size: 12px;
+        font-weight: 400;
+        padding-bottom: 28px;
+    }
+
+    .login-card button{
+        background-color: rgba(8, 9, 102, 0.95);
+        width: 55px;
+        height: 18px;
+        color: white;
+        font-size: 10px;
+        font-weight: 400;
+        margin-left: 75px;
+    } 
+    input{
+        font-size: 10px;
+    }
+    .login-card-info div{
+        padding: 8px 0;
+    }
+    #text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 9px;
+        margin-left: 10px;
+    }
+    #password-text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 9px;
+        margin-left: 10px;
+    }
+
+}
+@media(max-width : 560px){
+    .login-card{
+        height: 168px;
+        width: 25%;
+        border: 1px black solid;
+        margin-top: 23px;
+        margin-right: 45px;
+    }
+    .login-card-info input{
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(183, 183, 183, 0.479);
+    }
+    .login-card p{
+        font-size: 10px;
+        font-weight: 400;
+        padding-bottom: 22px;
+    }
+    .login-card button{
+        background-color: rgba(8, 9, 102, 0.95);
+        width: 50px;
+        height: 15px;
+        color: white;
+        font-size: 9px;
+        font-weight: 400;
+        margin-left: 68px;
+    } 
+    input{
+        font-size: 8px;
+    }
+    .login-card-info div{
+        padding: 6px 0;
+    }#text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 7px;
+        margin-left: 10px;
+    }
+    #password-text{
+        display: block;
+        color: #000;
+        font-weight: 500;
+        font-size: 7px;
+        margin-left: 10px;
+    }
+}
