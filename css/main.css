@@ -1,1 +1,131 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    display: flex ;
+}
+#top-nav{
+    background-color: rgba(238, 241, 248, 1);
+    display: flex;
+    align-items:center;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    box-shadow: 1px 2px 4px rgba(64, 64, 64, 0.617) ;
+}
+button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+.nav-items{
+    display: flex;
+    gap: 25px;
+    margin-left: 160px;
+}
+.nav-links{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+.nav-links:hover{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.554);
+    opacity: 0.8;
+}
+#menu-btn{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    height: 100px;
+    width: 200px;
+    margin-left: 325px;
+}
+#menu-btn i {
+    font-size: 40px
+}
+#shop-btn{
+    font-size: 20px;
+}
+#shop-btn i{
+    font-size: 40px;
+    margin-left: 400px;
+}
+#user-img{
+    padding-left: 100px;
+}
+#user-img i{
+    font-size: 55px;
+}
+#right-nav{
+    width: 15%;
+    height: 100vh;
+    background-color: #2E75FF;
+    position: fixed;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+#right-nav img{
+    width: 100%;
+}
+#right-nav p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+}
+.search-bar{
+    position:absolute;
+    margin-top: 8%;
+    margin-left: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    gap: 45px;
+    position: fixed;
+}
+.search-bar input{
+    border-radius: 70px;
+    background-color: rgba(220, 219, 219, 1);
+    height: 40px;
+    width: 285px;
+    border: none;
+    font-size: 22px;
+}
+#search-icon{
+    position: absolute;
+    margin-left: 288px;
+    margin-top: -11px;
+}.tags-bar{
+    margin-left: 20px;
+}
+.tags{
+    height:40px ;
+    width: 100px;
+    background: #2E75FF;
+    border-radius: 70px;
+    margin: 0 10px;
+}
+#the-main-subject{
+    margin-top: 20%;
+    margin-left: 15%;
+    width: 100%;
+    height: auto;
+}
+.card{
+    height: 250px;
+    width: 190px;
+    background-color: rgb(0, 0, 0);
+}
