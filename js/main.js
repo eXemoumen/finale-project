@@ -1,4 +1,4 @@
-var navbtn = document.querySelector("[data-navbtn]")
+var navbtn = document.getElementById('data-navbtn')
 var dropdown = document.querySelector(" [data-dropdown] ")
 var emailbox = document.querySelector("[data-emailbox]")
 var passwordbox = document.querySelector("[data-passwordbox]")
@@ -8,13 +8,16 @@ var password = document.getElementById('password-text')
 var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 var emailvalid = "";
 var pwvalid ="";
-// console.log(emailbox,passwordbox,loginbtn)
-navbtn.addEventListener('click' , ()=>{
-    dropdown.classList.remove
-    dropdown.classList.add("dropdown-items-active")
-  
-})
-loginbtn.addEventListener('click',()=>{
+var btnsroole = document.querySelector("[data-scroolbtn]")
+const cards = document.querySelectorAll('[data-cards]')
+const cardverification = 'ok'
+function dropdownmenu(){
+        dropdown.classList.remove
+        dropdown.classList.add("dropdown-items-active")
+      
+}
+
+function submit(){
     let email= emailbox.value;
     let pswrd = passwordbox.value;
     emailverification(email,emailvalid);
@@ -24,7 +27,7 @@ loginbtn.addEventListener('click',()=>{
         window.location.href="pages/mainpage.html";return
     }
 
-})  
+}
 function emailverification(email){
     if(email == ''){
         text.innerHTML='entre a email';
@@ -57,6 +60,10 @@ function passworverification(pswrd){
         password.style.color ="#ff0000";
     }
     }
-
-    
-
+cards.addEventListener("click" ,()=>{
+    cardinfo();
+})
+function cardinfo(){
+    console.log('helo')
+    window.location.href="pages/info.html";return
+};
