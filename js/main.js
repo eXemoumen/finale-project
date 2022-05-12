@@ -9,8 +9,8 @@ var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 var emailvalid = "";
 var pwvalid ="";
 var btnsroole = document.querySelector("[data-scroolbtn]")
-const cards = document.querySelectorAll('[data-cards]')
-const cardverification = 'ok'
+const cards = document.getElementsByClassName('card')
+
 function dropdownmenu(){
         dropdown.classList.remove
         dropdown.classList.add("dropdown-items-active")
@@ -60,10 +60,12 @@ function passworverification(pswrd){
         password.style.color ="#ff0000";
     }
     }
-cards.addEventListener("click" ,()=>{
-    cardinfo();
-})
 function cardinfo(){
     console.log('helo')
-    window.location.href="pages/info.html";return
-};
+    window.location.href="../pages/info.html";
+   
+    
+    
+    return
+    
+};  
