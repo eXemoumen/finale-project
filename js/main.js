@@ -10,11 +10,16 @@ var emailvalid = "";
 var pwvalid ="";
 var btnsroole = document.querySelector("[data-scroolbtn]")
 const cards = document.getElementsByClassName('card')
+const menubtn = document.querySelector("[data-menubtn]")
 
 function dropdownmenu(){
         dropdown.classList.remove
         dropdown.classList.add("dropdown-items-active")
       
+}
+function menudropdown(){
+    menubtn.style.display ="block";
+
 }
 
 function submit(){

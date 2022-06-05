@@ -51,6 +51,32 @@ button{
 #menu-btn i {
     font-size: 40px
 }
+.btn-dropdown{
+    height: 100px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 19px;
+    margin-left: 325px;
+    position:absolute;
+    line-height: 25px;
+    background-color: #ede8e8a1;
+    border-radius: 5px;
+    box-shadow: 1px 0.4px 0.3px rgba(121, 121, 121, 0.349) ;
+
+}
+.drop{
+    position: absolute;
+    display: none;
+
+
+}
+.btn-dropdown li {
+    padding: 5px;
+}
+.btn-dropdown li:hover{
+    background-color: #0000003a;
+}
 #shop-btn{
     font-size: 20px;
 }
@@ -152,6 +178,7 @@ main h2{
     overflow-x: auto;
     overscroll-behavior-inline:contain;
 }
+
 .card{
     height: 325px;
     width: 200px;
